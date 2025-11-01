@@ -10,7 +10,7 @@ export class ChatStorage extends DurableObject {
   private messages: ChatMessage[] = [];
   private initialized = false;
 
-  constructor(state: DurableObjectState, env: Env) {
+  constructor(state: DurableObjectState, env: never) {
     super(state, env);
   }
 
