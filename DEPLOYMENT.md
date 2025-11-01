@@ -1,6 +1,6 @@
 # Deployment Guide
 
-Step-by-step guide to deploy your AI Personal Assistant to Cloudflare's edge network.
+Step-by-step guide to deploy the AI Personal Assistant to Cloudflare's edge network.
 
 ## Prerequisites Checklist
 
