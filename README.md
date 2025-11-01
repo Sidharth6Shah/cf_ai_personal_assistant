@@ -2,6 +2,52 @@
 
 An intelligent conversational AI assistant built on Cloudflare's edge infrastructure that remembers your conversations and learns your preferences over time.
 
+> **Live Repository**: https://github.com/Sidharth6Shah/cf_ai_personal_assistant
+
+## Table of Contents
+
+- [Quick Start](#quick-start)
+- [Overview](#overview)
+- [Features](#features)
+- [Architecture](#architecture)
+- [Prerequisites](#prerequisites)
+- [Local Setup](#local-setup)
+- [Deployment](#deployment)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [API Endpoints](#api-endpoints)
+- [Testing](#testing)
+- [Configuration](#configuration)
+- [Troubleshooting](#troubleshooting)
+
+## Quick Start
+
+Get up and running in 10 minutes:
+
+**1. Install Dependencies**
+```bash
+cd worker && npm install
+cd ../frontend && npm install
+```
+
+**2. Login to Cloudflare**
+```bash
+cd worker && npx wrangler login
+```
+
+**3. Start Both Servers (use 2 terminals)**
+```bash
+# Terminal 1 - Worker
+cd worker && npx wrangler dev
+
+# Terminal 2 - Frontend  
+cd frontend && npm run dev
+```
+
+**4. Test** - Open http://localhost:5173 and try:
+- "Hello, my name is Alex"
+- "What's my name?" (AI should remember!)
+
 ## Overview
 
 This project demonstrates a complete AI-powered application using Cloudflare's suite of services:
